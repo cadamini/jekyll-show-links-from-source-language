@@ -1,0 +1,10 @@
+menu:
+  - meta:
+      ref: getting-started
+      name: Erste Schritte
+      color-class: color--getting-started
+      icon-path: /assets/ui/getting-started.svg
+    content:
+      - category: Allgemein
+        docs:
+          - system-requirements.md

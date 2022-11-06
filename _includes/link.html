@@ -1,0 +1,38 @@
+<!-- {% if page.lang == 'en' %}
+
+{% else %}
+
+    {% assign full_path = "_" | append: page.lang | append: "/" | append: include.path %}
+    {% assign post = site.docs_by_path[full_path] %} 
+    {{ post }}
+
+    
+
+<a href="{{ full_path }}">{{ full_path }}</a>
+{% endif %}
+ -->
+
+
+
+
+{% if page.lang == 'en' %}
+
+{% endif %}
+
+{% if page.lang != 'en' %}    
+
+    expected article in selected language: {{ include.path }}
+    {% assign full_path = "_" | append: page.lang | append: "/" | append: include.path %}
+    {% assign post = site.docs_by_path[full_path] %}
+    does article {{ full_path }} exist in this language? {{ post | inspect }}
+
+    {% assign full_path = "_" | append: 'en' | append: "/" | append: include.path %}
+    {% assign post = site.docs_by_path[full_path] %}
+    does article exist in source language? {{ post }}
+    full path: {{ full_path }}
+    link: {{ post[0] }}
+    title: {{ post[1] }}
+
+    <a href="{{ post[0] }}">{{ post[1] }}</a>
+
+{% endif %}
