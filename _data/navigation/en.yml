@@ -8,4 +8,6 @@ menu:
       - category: General
         docs:
           - system-requirements.md
+      - category: Guides
+        docs:
           - test.md
