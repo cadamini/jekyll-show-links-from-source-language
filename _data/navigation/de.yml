@@ -8,6 +8,6 @@ menu:
       - category: General
         docs:
           - system-requirements.md
-      - category: Guided
+      - category: Guides
         docs:
           - another-article.md
