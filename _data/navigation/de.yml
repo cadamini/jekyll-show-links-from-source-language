@@ -5,6 +5,9 @@ menu:
       color-class: color--getting-started
       icon-path: /assets/ui/getting-started.svg
     content:
-      - category: Allgemein
+      - category: General
         docs:
           - system-requirements.md
+      - category: Quick start guide
+        docs:
+          - another-article.md
